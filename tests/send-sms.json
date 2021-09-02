@@ -1,0 +1,9 @@
+{
+  "description": "A simple POST to the hello-world example",
+  "pathname": "send-sms",
+  "method": "POST",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": "{\n    \"to\": \"+14259996182\",\n    \"message\": \"Hi, follow us on twitter at https://twitter.com/zuplo\"\n}"
+}

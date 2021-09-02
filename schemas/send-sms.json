@@ -1,0 +1,16 @@
+{
+      "$id": "https://example.com/my-object.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "MyObject",
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "The message to send"
+        },
+        "to": {
+          "type": "string",
+          "description": "The target number in the format +12225558888"
+        }
+      }
+    }

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "label": "What zup?",
+      "path": "send-sms",
+      "export": "default",
+      "module": "send-sms",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "authentication": "Public",
+      "corsPolicy": "AnythingGoes",
+      "version": "None",
+      "key": "7d352a71-7306-47f4-9e69-8c93e10e3733"
+    }
+  ],
+  "versions": [
+    {
+      "name": "None",
+      "pathPrefix": ""
+    },
+    {
+      "name": "v1",
+      "pathPrefix": "v1/"
+    }
+  ]
+}
