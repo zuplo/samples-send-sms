@@ -5,5 +5,5 @@
   "headers": {
     "content-type": "application/json"
   },
-  "body": "{\n    \"to\": \"+14259996182\",\n    \"message\": \"Hi, follow us on twitter at https://twitter.com/zuplo\"\n}"
+  "body": "{\n    \"to\": \"+14259996182\",\n    \"meshage\": \"Hi, follow us on twitter at https://twitter.com/zuplo\"\n}"
 }
