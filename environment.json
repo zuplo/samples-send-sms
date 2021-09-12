@@ -1,0 +1,7 @@
+{
+  "environmentVariables": {
+    "TWILIO_AUTH_KEY": {
+      "variableType": "Secret"
+    }
+  }
+}
