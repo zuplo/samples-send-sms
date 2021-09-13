@@ -1,6 +1,7 @@
 import { RequestContext } from "@zuplo/runtime";
-import { ACCOUNT_SID, AUTH_TOKEN} from "./env";
-  
+import { ACCOUNT_SID } from "./constants";
+import env from "@app/environment";
+
 
 type Body = {
   message: string,
@@ -30,7 +31,7 @@ export default async function (context: RequestContext) {
     body: bodyParams.toString(),
     headers: {
       "content-type" : "application/x-www-form-urlencoded",
-      "Authorization" : "Basic " + Buffer.from(`${ACCOUNT_SID}:${AUTH_TOKEN}`).toString('base64') 
+      "Authorization" : "Basic " + Buffer.from(`${ACCOUNT_SID}:${env.TWILIO_AUTH_KEY}`).toString('base64') 
     }
   });
 }
