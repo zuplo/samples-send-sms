@@ -7,12 +7,12 @@
         "export": "default",
         "module": "$import(./modules/send-sms)"
       },
-      "methods": ["GET", "POST"],
-      "authentication": "Public",
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "corsPolicy": "AnythingGoes",
-      "version": "None",
-      "key": "7d352a71-7306-47f4-9e69-8c93e10e3733",
-      "inboundBodySchema": "send-sms.json"
+      "version": "None"
     }
   ],
   "versions": [
