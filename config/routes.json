@@ -11,7 +11,6 @@
         "GET",
         "POST"
       ],
-      "corsPolicy": "AnythingGoes",
       "version": "None"
     }
   ],
