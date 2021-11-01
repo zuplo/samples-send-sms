@@ -1,4 +1,4 @@
-import { RequestContext } from "@zuplo/runtime";
+import { ZuploRequest } from "@zuplo/runtime";
 import { ACCOUNT_SID } from "./constants";
 import env from "@app/environment";
 
@@ -9,7 +9,7 @@ type Body = {
 }
 
 
-export default async function (context: RequestContext) {
+export default async function (request: ZuploRequest) {
   const url = `https://api.twilio.com/2010-04-01/Accounts/${ACCOUNT_SID}/Messages.json`;
 
   const reqBody = context.body as Body;
