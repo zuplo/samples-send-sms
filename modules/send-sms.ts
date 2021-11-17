@@ -12,7 +12,7 @@ type Body = {
 export default async function (request: ZuploRequest) {
   const url = `https://api.twilio.com/2010-04-01/Accounts/${ACCOUNT_SID}/Messages.json`;
 
-  const reqBody = context.body as Body;
+  const reqBody = await request.json();
 
   const body = 
   {
@@ -23,7 +23,7 @@ export default async function (request: ZuploRequest) {
 
   const bodyParams = new URLSearchParams(body);
 
-  context.logger.info(bodyParams.toString());
+  request.logger.info(bodyParams.toString());
 
   return fetch(url, 
   {
