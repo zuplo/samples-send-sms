@@ -1,1 +1,2 @@
-export const ACCOUNT_SID = "AC5fd9ae9ad7fca90678a61f3fedcaca34";
+export const ACCOUNT_SID = "<enter your account SID here>";
+export const TWILIO_AUTH_KEY = "<enter your auth key here>";
