@@ -1,5 +1,5 @@
 import { ZuploRequest } from "@zuplo/runtime";
-import { ACCOUNT_SID } from "./constants";
+import { ACCOUNT_SID, TWILIO_AUTH_KEY } from "./constants";
 
 
 type Body = {
