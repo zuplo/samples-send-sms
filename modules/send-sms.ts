@@ -30,7 +30,7 @@ export default async function (request: ZuploRequest) {
     body: bodyParams.toString(),
     headers: {
       "content-type" : "application/x-www-form-urlencoded",
-      "Authorization" : "Basic " + Buffer.from(`${ACCOUNT_SID}:${TWILIO_AUTH_KEY}`).toString('base64') 
+      "Authorization" : "Basic " + btoa(`${ACCOUNT_SID}:${TWILIO_AUTH_KEY}`)
     }
   });
 }
