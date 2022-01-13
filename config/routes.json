@@ -11,12 +11,12 @@
         "GET",
         "POST"
       ],
-      "version": "None"
+      "version": "none"
     }
   ],
   "versions": [
     {
-      "name": "None",
+      "name": "none",
       "pathPrefix": ""
     },
     {
