@@ -1,6 +1,5 @@
 import { ZuploRequest } from "@zuplo/runtime";
 import { ACCOUNT_SID } from "./constants";
-import env from "@app/environment";
 
 
 type Body = {
@@ -31,7 +30,7 @@ export default async function (request: ZuploRequest) {
     body: bodyParams.toString(),
     headers: {
       "content-type" : "application/x-www-form-urlencoded",
-      "Authorization" : "Basic " + Buffer.from(`${ACCOUNT_SID}:${env.TWILIO_AUTH_KEY}`).toString('base64') 
+      "Authorization" : "Basic " + Buffer.from(`${ACCOUNT_SID}:${TWILIO_AUTH_KEY}`).toString('base64') 
     }
   });
 }
