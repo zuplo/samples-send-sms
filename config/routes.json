@@ -11,12 +11,13 @@
         "GET",
         "POST"
       ],
-      "version": "None"
+      "version": "none",
+      "corsPolicy": "AnythingGoes"
     }
   ],
   "versions": [
     {
-      "name": "None",
+      "name": "none",
       "pathPrefix": ""
     },
     {
