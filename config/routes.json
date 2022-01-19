@@ -2,7 +2,7 @@
   "routes": [
     {
       "label": "What zup?",
-      "path": "send-sms",
+      "path": "/send-sms",
       "handler": {
         "export": "default",
         "module": "$import(./modules/send-sms)"
@@ -12,7 +12,7 @@
         "POST"
       ],
       "version": "none",
-      "corsPolicy": "AnythingGoes"
+      "corsPolicy": "anything-goes"
     }
   ],
   "versions": [
@@ -22,7 +22,7 @@
     },
     {
       "name": "v1",
-      "pathPrefix": "v1/"
+      "pathPrefix": "/v1"
     }
   ]
 }
