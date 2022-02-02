@@ -1,4 +1,4 @@
-import { ZuploRequest } from "@zuplo/runtime";
+import { ZuploRequest, ZuploContext } from "@zuplo/runtime";
 import { ACCOUNT_SID, TWILIO_AUTH_KEY } from "./constants";
 
 
@@ -8,7 +8,7 @@ type Body = {
 }
 
 
-export default async function (request: ZuploRequest) {
+export default async function (request: ZuploRequest, context: ZuploContext) {
   const url = `https://api.twilio.com/2010-04-01/Accounts/${ACCOUNT_SID}/Messages.json`;
 
   const reqBody = await request.json();
@@ -22,7 +22,7 @@ export default async function (request: ZuploRequest) {
 
   const bodyParams = new URLSearchParams(body);
 
-  request.logger.info(bodyParams.toString());
+  context.log.info(bodyParams.toString());
 
   return fetch(url, 
   {
