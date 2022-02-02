@@ -2,4 +2,4 @@
 
 Instantly deploy this Zup to zuplo.com:
 
-[![Foo](https://zuplo.com/images/zup_it.png)](https://github.com/zuplo/samples-send-sms.git)
+[![Foo](https://zuplo.com/images/zup_it.png)](http://portal.zuplo.com/clone?sourceRepoUrl=https://github.com/zuplo/samples-send-sms.git)
